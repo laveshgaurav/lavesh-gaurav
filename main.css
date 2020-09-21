@@ -1,0 +1,388 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  width: 100%;
+  color: #fff;
+  background-color: black;
+}
+
+.flow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flow .flow1 {
+  width: 33.333%;
+  background-color: #a2a2a2;
+  height: 100%;
+}
+
+.flow .flow2 {
+  width: 33.333%;
+  background-color: #ff4949;
+  height: 100%;
+}
+
+.flow .flow3 {
+  width: 33.333%;
+  background-color: #fff;
+  height: 100%;
+}
+
+.particles-js-canvas-el {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}
+
+.intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container {
+  width: 95%;
+  margin: auto;
+  background-color: #363636a8;
+}
+
+.container .row {
+  width: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.container {
+  width: 95%;
+  margin: auto;
+  background-color: #363636a8;
+}
+
+.container .row {
+  width: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.container .row .intro_text {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 16px;
+}
+
+.container .row .intro_text .intro-text-box h1 {
+  font-size: 3rem !important;
+}
+
+.container .row .intro_text .intro-text-box p {
+  margin: 8px auto;
+  color: #a2a2a2;
+}
+
+.container .row .intro_text .intro-text-box .intro_text-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.container .row .intro_text .intro-text-box .intro_text-links .contact {
+  background-color: #ff4949;
+  border: 2px solid #ff4949;
+  padding: 8px 16px;
+  z-index: 2;
+  position: relative;
+  line-height: 32px;
+  border-radius: 50px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0px 16px 40px -14px #ff4949be;
+          box-shadow: 0px 16px 40px -14px #ff4949be;
+}
+
+.container .row .intro_text .intro-text-box .intro_text-links .CV {
+  border: 2px solid #ff4949;
+  padding: 8px 20px;
+  line-height: 32px;
+  border-radius: 50px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  background-color: #363636a8;
+  cursor: pointer;
+  margin: auto;
+  z-index: 2;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .row .intro_text .intro-text-box .intro_text-links .contact:hover {
+  background-color: #363636a8;
+  -webkit-box-shadow: 0px 0px 0px 0px transparent;
+          box-shadow: 0px 0px 0px 0px transparent;
+}
+
+.container .row .intro_text .intro-text-box .intro_text-links .CV:hover {
+  background-color: #ff4949;
+  -webkit-box-shadow: 0px 16px 40px -14px #ff4949be;
+          box-shadow: 0px 16px 40px -14px #ff4949be;
+}
+
+.container .row .intro_pic {
+  width: 30%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .row .intro_pic .intro_pic-bg {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background-color: #ff4949;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.container .row .intro_pic .intro_pic_img {
+  width: 100%;
+}
+
+.container .row .intro_pic .intro_pic_img img {
+  width: 100%;
+  z-index: 2;
+  position: relative;
+}
+
+.container .row .intro_links {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-left: 26px;
+  padding-bottom: 16px;
+}
+
+.container .row .intro_links .link-container {
+  width: 100%;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  border-radius: 35px 0px 0px 35px;
+  padding: 12px 12px 12px 18px;
+}
+
+.container .row .intro_links .link-container .intro_links-icons {
+  width: 100%;
+  margin: 4px;
+  background-color: #ff4949;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+}
+
+.container .row .intro_links .link-container .intro_links-icons:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.container .row .intro_links .link-container .icon-container {
+  width: 100%;
+  padding: 8px;
+}
+
+.container .row .intro_links .link-container .icon-container a img {
+  width: 100%;
+}
+
+.row {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.row .intro-content {
+  width: 21%;
+  background-color: #ff4949;
+  padding: 24px;
+  margin: 2%;
+}
+
+.row .intro-content h2 {
+  font-size: 2rem !important;
+}
+
+.container-intro {
+  margin: -12% auto 0 auto;
+  z-index: 3;
+  position: relative;
+}
+
+.container-work {
+  width: 95%;
+  margin: 12% auto;
+  background-color: #363636a8;
+  padding: 2rem;
+}
+
+.container-work .container-row {
+  width: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-work .container-row h2 {
+  font-size: 2.2rem !important;
+}
+
+.container-work .container-row p {
+  letter-spacing: 8px;
+}
+
+.container-work .work-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.container-work .work-item .works {
+  width: 40%;
+  margin: 2% auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #ff4949;
+  border-radius: 12px;
+}
+
+.container-work .work-item .works .work-img {
+  width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 12px;
+}
+
+.container-work .work-item .works .work-img img {
+  width: 60%;
+}
+
+.container-work .work-item .works .work-text {
+  width: 60%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.container-work .work-item .works .work-text p:nth-child(1) {
+  font-size: 2vw;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.container-work .work-item .works .work-text p:nth-child(2) {
+  letter-spacing: 3px;
+  font-size: 0.8vw;
+}
+/*# sourceMappingURL=main.css.map */

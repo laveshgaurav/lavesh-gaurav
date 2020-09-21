@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@media only screen and (max-width: 768px) {
+  .intro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 18px;
+  }
+  .container {
+    width: 98%;
+    margin: auto;
+  }
+  .container .row {
+    width: 100%;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .row .intro_text {
+    width: 100%;
+  }
+  .container .row .intro_text .intro-text-box .intro_text-links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 80%;
+  }
+  .container .row .intro_text .intro-text-box .intro_text-links .CV {
+    margin: 12px 0 0 0;
+  }
+  .container .row .intro_pic {
+    width: 100%;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container .row .intro_pic .intro_pic-bg {
+    position: absolute;
+    width: 80%;
+    height: 60%;
+    background-color: #ff4949;
+    z-index: 1;
+    border-radius: 50%;
+  }
+  .container .row .intro_pic .intro_pic_img {
+    width: 100%;
+  }
+  .container .row .intro_pic .intro_pic_img img {
+    width: 100%;
+    z-index: 2;
+    position: relative;
+  }
+  .container .row .intro_links {
+    width: 70%;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding-left: 0px;
+    padding-bottom: 16px;
+  }
+  .container .row .intro_links .link-container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding: 8px 8px 8px 8px;
+    background-color: transparent;
+  }
+  .container .row .intro_links .link-container .intro_links-icons {
+    width: 100%;
+    margin: 4px;
+    background-color: transparent;
+  }
+  .container .row .intro_links .link-container .icon-container {
+    width: 60%;
+    padding: 4%;
+  }
+  .container .row .intro_links .link-container .icon-container a img {
+    width: 100%;
+  }
+  .row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .row .intro-content {
+    width: 96%;
+    background-color: #ff4949;
+    padding: 18px;
+    margin: 2%;
+  }
+  .container-intro {
+    margin: -12% auto 0 auto;
+    z-index: 3;
+    position: relative;
+  }
+  .container-work {
+    width: 98%;
+    margin: 12% auto;
+  }
+  .container-work .container-row {
+    width: 100%;
+    margin: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container-work .work-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+  .container-work .work-item .works {
+    width: 96%;
+    margin: 2%;
+    background-color: #ff4949;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .container-work .work-item .works .work-img {
+    width: 35%;
+  }
+  .container-work .work-item .works .work-img img {
+    width: 100%;
+  }
+  .container-work .work-item .works .work-text {
+    width: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container-work .work-item .works .work-text p:nth-child(1) {
+    font-size: 5vw;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  .container-work .work-item .works .work-text p:nth-child(2) {
+    letter-spacing: 0px;
+    font-size: 3.2vw;
+  }
+}
+/*# sourceMappingURL=mediaQuery.css.map */
