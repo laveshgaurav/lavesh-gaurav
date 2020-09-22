@@ -166,6 +166,66 @@
     </div>
   </section>
 
+  <!-- MY SKILLS -->
+  <section class="container-skill">
+    <div class="row-skill">
+      <h2>MY SKILLS</h2>
+      <div class="down-bar"></div>
+    </div>
+    <div class="skills">
+      <div class="skill-content">
+        <div class="skill-bg" id="skill-bg"></div>
+        <div class="skill-img">
+          <img src="./assets/Lavesh2.png">
+        </div>
+      </div>
+      <div class="skill-bars">
+        <div class="topic html">
+          <p>UI</p>
+          <div class="bar-bg">
+            <div style="width: 85%;" class="bar-fg"></div>
+            <p>85%</p>
+          </div>
+        </div>
+        <div class="topic html">
+          <p>HTML</p>
+          <div class="bar-bg">
+            <div style="width: 90%;" class="bar-fg"></div>
+            <p>90%</p>
+          </div>
+        </div>
+        <div class="topic css">
+          <p>CSS</p>
+          <div class="bar-bg">
+            <div style="width: 80%;" class="bar-fg"></div>
+            <p>80%</p>
+          </div>
+        </div>
+        <div class="topic js">
+          <p>JS</p>
+          <div class="bar-bg">
+            <div style="width: 75%;" class="bar-fg"></div>
+            <p>75%</p>
+          </div>
+        </div>
+        <div class="topic react">
+          <p>REACT</p>
+          <div class="bar-bg">
+            <div style="width: 80%" class="bar-fg"></div>
+            <p>80%</p>
+          </div>
+        </div>
+        <div class="topic python">
+          <p>PYTHON</p>
+          <div class="bar-bg">
+            <div style="width: 70%" class="bar-fg"></div>
+            <p>70%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r120/three.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
@@ -207,6 +267,7 @@
 
     document.addEventListener("mousemove", parallax);
     var imageBgs = document.getElementById("imageBgs");
+    var skillBg = document.getElementById('skill-bg')
 
     function parallax(e) {
       const speed = 5;
@@ -217,6 +278,8 @@
       const y = window.innerHeight / 10 - e.pageY / 10;
 
       imageBgs.style.transform = `translate( ${x}px, ${y}px)`;
+      skillBg.style.transform = `translate( ${x}px, ${y}px)`;
+
     }
 
     var cursor = document.getElementById("cursor");

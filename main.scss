@@ -1,18 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 $base-color: #363636a8;
 $text-color: #fff;
-$text-sec:#a2a2a2;
+$text-sec: #a2a2a2;
 // $accent-color:#EA4C89;
-$accent-color:#ff4949;
-
+$accent-color: #ff4949;
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Roboto',
-        sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -39,7 +37,6 @@ body {
 body .cursor {
     transform: translate(-50%, -50%) scale(3);
 }
-
 
 // .contact-popup {
 //     position: fixed;
@@ -137,7 +134,6 @@ body .cursor {
     margin: auto;
     background-color: $base-color;
 
-
     .row {
         width: 100%;
         margin: auto;
@@ -150,7 +146,6 @@ body .cursor {
     width: 95%;
     margin: auto;
     background-color: $base-color;
-
 
     .row {
         width: 100%;
@@ -180,7 +175,6 @@ body .cursor {
                     display: flex;
                     width: 100%;
 
-
                     .contact {
                         background-color: $accent-color;
                         border: 2px solid $accent-color;
@@ -194,7 +188,7 @@ body .cursor {
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        box-shadow: 0px 16px 40px -14px #ff4949be
+                        box-shadow: 0px 16px 40px -14px #ff4949be;
                     }
 
                     .CV {
@@ -215,12 +209,12 @@ body .cursor {
 
                     .contact:hover {
                         background-color: $base-color;
-                        box-shadow: 0px 0px 0px 0px transparent
+                        box-shadow: 0px 0px 0px 0px transparent;
                     }
 
                     .CV:hover {
                         background-color: $accent-color;
-                        box-shadow: 0px 16px 40px -14px #ff4949be
+                        box-shadow: 0px 16px 40px -14px #ff4949be;
                     }
                 }
             }
@@ -284,7 +278,6 @@ body .cursor {
                     width: 100%;
                     padding: 8px;
 
-
                     a {
                         img {
                             width: 100%;
@@ -295,8 +288,6 @@ body .cursor {
         }
     }
 }
-
-
 
 .row {
     flex-wrap: wrap;
@@ -363,12 +354,9 @@ body .cursor {
                 justify-content: center;
                 padding: 12px;
 
-
                 img {
                     width: 60%;
                 }
-
-
             }
 
             .work-text {
@@ -389,7 +377,121 @@ body .cursor {
                 p:nth-child(2) {
                     letter-spacing: 3px;
                     font-size: 0.8vw;
+                }
+            }
+        }
+    }
+}
 
+.container-skill {
+    width: 95%;
+    margin: auto;
+    background-color: $base-color;
+    padding: 2rem;
+
+    .row-skill {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+
+        .down-bar {
+            width: 50%;
+            margin: 0.8rem auto;
+            height: 4px;
+            background-color: $accent-color;
+        }
+    }
+
+    .skills {
+        width: 100%;
+        margin: auto;
+        display: flex;
+
+        .skill-content {
+            padding: 2%;
+            width: 40%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .skill-bg {
+                position: absolute;
+                width: 250px;
+                height: 250px;
+                background-color: $accent-color;
+                z-index: 1;
+                border-radius: 50%;
+            }
+
+            .skill-img {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    width: 160%;
+                    position: relative;
+                    z-index: 1;
+                }
+            }
+        }
+
+        .skill-bars {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            padding: 1rem 1.5rem;
+
+            .topic {
+                width: 100%;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                padding: 0.4rem;
+
+                p {
+                    padding: 0.5rem 0;
+                }
+
+                .bar-bg {
+                    width: 100%;
+                    background-color: black;
+                    padding: 1px;
+                    height: 1.2rem;
+                    border-radius: 50px;
+                    position: relative;
+
+                    p {
+                        position: absolute;
+                        right: 10px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        color: $accent-color;
+                    }
+
+                    .bar-fg {
+                        height: 100%;
+                        // background-color: $accent-color;
+                        background-image: linear-gradient(45deg,
+                                $accent-color 25%,
+                                transparent 25%,
+                                transparent 50%,
+                                $accent-color 50%,
+                                $accent-color 75%,
+                                transparent 75%,
+                                transparent);
+                        border-radius: 50px;
+                        background-size: 40px;
+                        animation: barMove 0.3s linear infinite;
+                    }
+
+                    @keyframes barMove {
+                        100% {
+                            background-position: 40px;
+                        }
+                    }
                 }
             }
         }

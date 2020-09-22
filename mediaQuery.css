@@ -178,5 +178,257 @@
     letter-spacing: 0px;
     font-size: 3.2vw;
   }
+  .container-skill {
+    width: 95%;
+    margin: auto;
+    background-color: #363636a8;
+    padding: 2rem;
+  }
+  .container-skill .row-skill {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  .container-skill .row-skill .down-bar {
+    width: 50%;
+    margin: 0.8rem auto;
+    height: 4px;
+    background-color: #ff4949;
+  }
+  .container-skill .skills {
+    width: 100%;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .container-skill .skills .skill-content {
+    padding: 2%;
+    width: 40%;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container-skill .skills .skill-content .skill-bg {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background-color: #ff4949;
+    z-index: 1;
+    border-radius: 50%;
+  }
+  .container-skill .skills .skill-content .skill-img {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container-skill .skills .skill-content .skill-img img {
+    width: 160%;
+    position: relative;
+    z-index: 1;
+  }
+  .container-skill .skills .skill-bars {
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1rem 0.8rem;
+  }
+  .container-skill .skills .skill-bars .topic {
+    width: 100%;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0.4rem;
+  }
+  .container-skill .skills .skill-bars .topic p {
+    padding: 0.5rem 0;
+  }
+  .container-skill .skills .skill-bars .topic .bar-bg {
+    width: 100%;
+    background-color: black;
+    padding: 1px;
+    height: 1.2rem;
+    border-radius: 50px;
+    position: relative;
+  }
+  .container-skill .skills .skill-bars .topic .bar-bg p {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    color: #ff4949;
+  }
+  .container-skill .skills .skill-bars .topic .bar-bg .bar-fg {
+    height: 100%;
+    background-image: linear-gradient(45deg, #ff4949 25%, transparent 25%, transparent 50%, #ff4949 50%, #ff4949 75%, transparent 75%, transparent);
+    border-radius: 50px;
+    background-size: 40px;
+    -webkit-animation: barMove 0.3s linear infinite;
+            animation: barMove 0.3s linear infinite;
+  }
+  @-webkit-keyframes barMove {
+    100% {
+      background-position: 40px;
+    }
+  }
+  @keyframes barMove {
+    100% {
+      background-position: 40px;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container-skill {
+    width: 100%;
+    margin: auto;
+    background-color: #363636a8;
+    padding: 1rem;
+  }
+  .container-skill .row-skill {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  .container-skill .row-skill .down-bar {
+    width: 50%;
+    margin: 0.8rem auto;
+    height: 4px;
+    background-color: #ff4949;
+  }
+  .container-skill .skills {
+    width: 100%;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container-skill .skills .skill-content {
+    padding: 2%;
+    width: 100%;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container-skill .skills .skill-content .skill-bg {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #ff4949;
+    z-index: 1;
+    border-radius: 50%;
+  }
+  .container-skill .skills .skill-content .skill-img {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container-skill .skills .skill-content .skill-img img {
+    width: 160%;
+    position: relative;
+    z-index: 1;
+  }
+  .container-skill .skills .skill-bars {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container-skill .skills .skill-bars .topic {
+    width: 100%;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0.4rem;
+  }
+  .container-skill .skills .skill-bars .topic p {
+    padding: 0.5rem 0;
+  }
+  .container-skill .skills .skill-bars .topic .bar-bg {
+    width: 100%;
+    padding: 1px;
+    height: 1.2rem;
+    border-radius: 50px;
+    position: relative;
+  }
+  .container-skill .skills .skill-bars .topic .bar-bg p {
+    position: absolute;
+    right: 42px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    color: #ff4949;
+    font-size: 10px;
+  }
+  .container-skill .skills .skill-bars .topic .bar-bg .bar-fg {
+    height: 100%;
+    background-image: linear-gradient(45deg, #ff4949 25%, transparent 25%, transparent 50%, #ff4949 50%, #ff4949 75%, transparent 75%, transparent);
+    border-radius: 50px;
+    background-size: 40px;
+    -webkit-animation: barMove 0.3s linear infinite;
+            animation: barMove 0.3s linear infinite;
+  }
+  @-webkit-keyframes barMove {
+    100% {
+      background-position: 40px;
+    }
+  }
+  @keyframes barMove {
+    100% {
+      background-position: 40px;
+    }
+  }
 }
 /*# sourceMappingURL=mediaQuery.css.map */
