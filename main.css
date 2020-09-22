@@ -11,6 +11,7 @@ body {
   width: 100%;
   color: #fff;
   background-color: black;
+  overflow-x: hidden;
 }
 
 #cursor {
