@@ -1,21 +1,21 @@
 let tl1 = gsap.timeline();
 
-tl1
-  .to(".flow", { duration: 1, width: "100%" })
-  .to(".flow1", {
-    duration: 0.5,
-    height: 0,
-  })
-  .to(".flow2", {
-    duration: 0.5,
-    height: 0,
-  })
-  .to(".flow3", {
-    height: 0,
-    duration: 0.5,
-  })
-  .from(".intro", { scale: 0 })
-  .from(".container-intro", { scale: 0 });
+// tl1
+//   .to(".flow", { duration: 1, width: "100%" })
+//   .to(".flow1", {
+//     duration: 0.5,
+//     height: 0,
+//   })
+//   .to(".flow2", {
+//     duration: 0.5,
+//     height: 0,
+//   })
+//   .to(".flow3", {
+//     height: 0,
+//     duration: 0.5,
+//   })
+//   .to(".intro", { scale: 1 })
+//   .from(".container-intro", { scale: 0 });
 
 let tl2 = gsap.timeline({
   scrollTrigger: {
@@ -38,7 +38,7 @@ tl2
   .addLabel("start")
   .from(".container-work", {
     scale: 0.4,
-    autoAlpha: 1,
+    autoAlpha: 0.2,
     rotate: 180,
     backgroundColor: "#ff4949",
   })

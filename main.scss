@@ -21,6 +21,24 @@ body {
     background-color: black;
 }
 
+#cursor {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: $accent-color;
+    z-index: 4;
+    transition: 0.1s ease-out;
+    pointer-events: none;
+    mix-blend-mode: difference;
+}
+
+// body>.container-intro:hover {
+//     transform: scale(4);
+// }
+body .cursor {
+    transform: translate(-50%, -50%) scale(3);
+}
 
 
 // .contact-popup {
@@ -110,6 +128,7 @@ body {
     display: flex;
     height: 100vh;
     align-items: center;
+    transform: scale(1);
     justify-content: center;
 }
 

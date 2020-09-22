@@ -12,6 +12,8 @@
         -ms-flex-pack: center;
             justify-content: center;
     margin: 18px;
+    -webkit-transform: scale(0);
+            transform: scale(0);
   }
   .container {
     width: 98%;
