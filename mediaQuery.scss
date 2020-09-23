@@ -462,4 +462,48 @@
             }
         }
 
+        .container-work {
+            width: 95%;
+            margin: 1.2rem auto;
+            background-color: $base-color;
+            padding: 2rem;
+
+            .row-work {
+                width: 100%;
+                margin: auto;
+                text-align: center;
+
+                .down-bar {
+                    width: 50%;
+                    margin: 1.2rem auto;
+                    height: 4px;
+                    background-color: $accent-color;
+                }
+            }
+
+            .works {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+
+                // .work-img {
+                //     width: 98%;
+                //     margin: 1%;
+
+                //     img {
+                //         width: 100%;
+                //     }
+                // }
+                .work-col {
+                    width: 98%;
+                    margin: 1%;
+
+                    img {
+                        width: 100%;
+                        padding: 0.5rem;
+                    }
+                }
+            }
+        }
+
     }

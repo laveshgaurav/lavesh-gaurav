@@ -70,20 +70,13 @@ tl3
   .from(".container-skill", {
     // scale: 0.4,
     autoAlpha: 0.2,
-    x: 1040,
+    y: 1040,
     backgroundColor: "#ff4949",
   })
-  // .addLabel("color")
   .to(".container-skill", {
     // scale: 1,
     autoAlpha: 1,
-    x: -1040,
-    backgroundColor: "#363636a8",
-  })
-  .to(".container-skill", {
-    // scale: 1,
-    autoAlpha: 1,
-    x: 0,
+    y: 0,
     backgroundColor: "#363636a8",
   });
 
